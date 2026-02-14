@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>💖 Будешь моей валентинкой?</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ❤️ Сердечки -->
+<div id="hearts-container"></div>
+
+<!-- 🟣 Стартовий екран -->
+<section id="start" class="center-screen">
+    <img src="assets/img/minion%20heart.png" class="main-photo" />
+
+    <h1 id="question">Будешь моей валентинкой? 💘</h1>
+
+    <div class="buttons">
+        <button id="yesBtn">ДА 💖</button>
+        <button id="noBtn">НЭ 😢</button>
+    </div>
+</section>
+
+<section id="celebration" class="hidden">
+    <video autoplay muted loop playsinline>
+        <source src="assets/gif/kitten-white-cat.mp4" type="video/mp4">
+    </video>
+</section>
+
+<div class="bg-gallery" id="bgGallery">
+    <div class="bg-row">
+        <img src="assets/img/img1.JPG">
+        <img src="assets/img/img2.JPG">
+        <img src="assets/img/img4.JPG">
+        <img src="assets/img/img6.JPG">
+        <img src="assets/img/img8.jpg">
+        <img src="assets/img/img11.jpg">
+        <img src="assets/img/img14.jpg">
+        <img src="assets/img/img17.jpg">
+        <img src="assets/img/img20.jpg">
+        <img src="assets/img/img23.JPG">
+        <img src="assets/img/img26.JPG">
+        <img src="assets/img/img28.JPG">
+    </div>
+
+    <div class="bg-row">
+        <img src="assets/img/img3.JPG">
+        <img src="assets/img/img5.JPG">
+        <img src="assets/img/img7.JPG">
+        <img src="assets/img/img9.jpg">
+        <img src="assets/img/img12.jpg">
+        <img src="assets/img/img15.jpg">
+        <img src="assets/img/img18.jpg">
+        <img src="assets/img/img21.jpg">
+        <img src="assets/img/img24.PNG">
+        <img src="assets/img/img27.JPG">
+    </div>
+
+    <div class="bg-row">
+        <img src="assets/img/img10.jpg">
+        <img src="assets/img/img13.jpg">
+        <img src="assets/img/img16.jpg">
+        <img src="assets/img/img19.jpg">
+        <img src="assets/img/img22.jpg">
+    </div>
+</div>
+
+<!-- Основний сайт -->
+<section id="main" class="hidden">
+<div class="app">
+    <nav class="menu">
+        <button data-tab="letter">💌 Валентинка</button>
+        <button data-tab="gallery">🖼 Галерея</button>
+        <button data-tab="sounds">🔊 Секрет</button>
+        <button data-tab="message">✍️ Можешь мне написать</button>
+    </nav>
+
+    <div class="content">
+
+        <div id="letter" class="tab active">
+            <h2>Мои слова к тебе 💕</h2>
+            <p>
+                Дашуля моя любимая, с днем святого Валентина💗💕<br>
+                Я люблю тебя очень сильно, очень очееень сильноо❤️‍🔥❤️‍🔥❤️‍🔥<br>
+                Ты знаешь, я всегда был рядом, чтобы не было.<br>
+                Ты первое, что мне важно.<br>
+                Кто мне нужен.<br>
+                Мой ясный лучик.<br>
+                Мой пушыстый котик.<br>
+                И ведь ты первая ряди которой я старался, стараюсь и буду стараться.<br>
+                И любовь моя к тебе не в словах, ведь ее не опишеш...<br>
+                Она спрятана за поступками,<br>
+                а поступки мои ради твоей улыбки.<br>
+                Я люблю тебя, моя любимая💞💓
+            </p>
+        </div>
+
+        <div id="gallery" class="tab">
+            <div class="gallery-grid">
+                <img src="assets/img/img1.JPG" onclick="openMedia(this)">
+                <img src="assets/img/img3.JPG" onclick="openMedia(this)">
+                <video src="assets/gif/lovegif.MP4" onclick="openMedia(this)"></video>
+                <img src="assets/img/img2.JPG" onclick="openMedia(this)">
+                <img src="assets/img/img4.JPG" onclick="openMedia(this)">
+                <img src="assets/img/img5.JPG" onclick="openMedia(this)">
+                <img src="assets/img/img6.JPG" onclick="openMedia(this)">
+                <img src="assets/img/img7.JPG" onclick="openMedia(this)">
+                <video src="assets/gif/gif1.MOV" onclick="openMedia(this)"></video>
+                <img src="assets/img/img8.jpg" onclick="openMedia(this)">
+                <img src="assets/img/img9.jpg" onclick="openMedia(this)">
+                <img src="assets/img/img10.jpg" onclick="openMedia(this)">
+                <video src="assets/gif/gif2.mp4" onclick="openMedia(this)"></video>
+                <img src="assets/img/img11.jpg" onclick="openMedia(this)">
+                <img src="assets/img/img12.jpg" onclick="openMedia(this)">
+                <img src="assets/img/img13.jpg" onclick="openMedia(this)">
+                <video src="assets/gif/gif3.MP4" onclick="openMedia(this)"></video>
+                <img src="assets/img/img14.jpg" onclick="openMedia(this)">
+                <img src="assets/img/img15.jpg" onclick="openMedia(this)">
+                <img src="assets/img/img16.jpg" onclick="openMedia(this)">
+                <video src="assets/gif/gif4.MP4" onclick="openMedia(this)"></video>
+                <img src="assets/img/img17.jpg" onclick="openMedia(this)">
+                <img src="assets/img/img18.jpg" onclick="openMedia(this)">
+                <img src="assets/img/img19.jpg" onclick="openMedia(this)">
+                <video src="assets/video/video1.MP4" onclick="openMedia(this)"></video>
+                <img src="assets/img/img20.jpg" onclick="openMedia(this)">
+                <img src="assets/img/img21.jpg" onclick="openMedia(this)">
+                <img src="assets/img/img22.jpg" onclick="openMedia(this)">
+                <video src="assets/video/video2.MOV" onclick="openMedia(this)"></video>
+                <img src="assets/img/img23.JPG" onclick="openMedia(this)">
+                <img src="assets/img/img24.PNG" onclick="openMedia(this)">
+                <img src="assets/img/img26.JPG" onclick="openMedia(this)">
+                <img src="assets/img/img27.JPG" onclick="openMedia(this)">
+                <video src="assets/video/video3.MP4" onclick="openMedia(this)"></video>
+                <img src="assets/img/img28.JPG" onclick="openMedia(this)">
+                <video src="assets/video/video4.MOV" onclick="openMedia(this)"></video>
+
+            </div>
+        </div>
+
+        <div id="modal" class="modal" onclick="closeModal()">
+            <div id="modalContent"></div>
+        </div>
+
+        <div id="sounds" class="tab">
+            <div class="sound-buttons">
+                <div class="sound-card">
+                    <iframe src="https://www.myinstants.com/instant/romantic-50391/embed/"
+                            frameborder="0" scrolling="no"></iframe>
+                </div>
+
+                <div class="sound-card">
+                    <iframe src="https://www.myinstants.com/instant/zrozumii-suko-mi-ukrayintsi-44647/embed/"
+                            frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="message" class="tab">
+            <h2>Напиши мне 💌</h2>
+            <textarea id="loveText" placeholder="Тут твои слова..."></textarea>
+            <button onclick="sendMessage()">Отправить ❤️</button>
+        </div>
+
+    </div>
+</div>
+    <audio id="bgMusic" loop>
+        <source src="assets/music/Adele%20-%20Lovesong.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicToggle" class="music-btn hidden">🎵</button>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
